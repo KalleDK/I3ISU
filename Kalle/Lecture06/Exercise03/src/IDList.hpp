@@ -1,0 +1,41 @@
+#ifndef IDLIST_HPP_
+#define IDLIST_HPP_
+//Car ID's
+enum
+{
+        ID_CAR_PASSAGE_GRANTED = 0,
+        ID_CAR_CHANGE_LOCATION = 1,
+};
+
+//Door types
+enum
+{
+	DOOR_TYPE_ENTRY = 0,
+	DOOR_TYPE_EXIT = 1
+};
+
+//Door ID's
+enum
+{
+	ID_DOOR_OPEN_REQ = 0,
+	ID_DOOR_PASSAGE_COMPLETE = 1,
+	ID_DOOR_CHECK_QUEUE = 2,
+	ID_DOOR_CAR_ARRIVED = 3,
+	ID_DOOR_QUEUE_EMPTY = 4
+};
+
+//Garage ID's
+enum {
+	ID_GARAGE_ENTRY_REQ = 0,
+	ID_GARAGE_EXIT_REQ = 1,
+	ID_GARAGE_GET_ENTRY_CAR_REQ = 2,
+	ID_GARAGE_GET_EXIT_CAR_REQ = 3
+};
+
+//Timer ID's
+enum
+{
+	ID_TIMER_CLOCK = 0,
+	ID_TIMER_NEW_EVENT = 1,
+};
+#endif

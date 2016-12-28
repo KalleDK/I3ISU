@@ -1,0 +1,4 @@
+#!/bin/bash
+	sudo ifdown usb0
+	sudo ifup usb0
+	sshpass -p '\n' ssh root@10.9.8.2

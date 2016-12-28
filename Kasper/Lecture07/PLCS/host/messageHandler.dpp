@@ -1,0 +1,2 @@
+host/messageHandler.o: src/messageHandler.cpp src/messageHandler.hpp
+	${CXX} -c -o $@ $< ${CXXFLAGS}

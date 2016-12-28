@@ -1,0 +1,4 @@
+#echo "Raspberry"
+CXX=arm-linux-gnueabihf-g++
+AR=arm-linux-gnueabihf-ar
+OS=OS_LINUX

@@ -1,0 +1,2 @@
+host/main.o: src/main.cpp src/SmartString.hpp
+	${CXX} -c -o $@ $< ${CXXFLAGS}

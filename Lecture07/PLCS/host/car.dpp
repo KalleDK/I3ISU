@@ -1,0 +1,3 @@
+host/car.o: src/car.cpp src/car.hpp src/messageHandler.hpp \
+ src/messages.hpp src/garage.hpp src/door.hpp
+	${CXX} -c -o $@ $< ${CXXFLAGS}

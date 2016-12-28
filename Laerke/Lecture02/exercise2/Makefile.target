@@ -1,0 +1,15 @@
+CXX= arm-angstrom-linux-gnueabi-g++
+
+hello_tgt: 	 hello_tgt.o
+	  ${CXX} -o hello_tgt hello.o
+	  
+hello_tgt.o: hello.cpp
+	  ${CXX} -c hello.cpp
+	  
+clean:	 
+	  rm *.o hello_tgt
+
+help:
+	  @echo "\t hello:\n\t Invoke compiler g++ to create executable hello from object file hello.o\n"
+	  @echo "\t hello.o:\n\t Invoke compiler g++ to create an object file hello.o from source file hello.cpp\n"
+	  @echo "\t clean:\n\t removees all the object files as well as the executable\n"
